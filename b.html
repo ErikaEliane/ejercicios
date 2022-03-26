@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+   <header>
+      <nav>
+          <ul>
+              <div class="menu">
+                  <li><a href="index.html">Ejercico  A</a></li>
+                  <li><a href="b.html">Ejercico  B</a></li>
+                  <li><a href="c.html" > Ejercico  C</a></li>
+                  <li><a href="d.html"> Ejercico  D</a></li>
+                   <li><a href="e.html" > Ejercico  E</a></li>
+               </div>
+          </ul>
+       </nav>
+    </header>
+    <script type="text/javascript">
+        function suma(){
+            var Numero1=Number(document.getElementById("Numero1").value);
+
+            var Numero2=Number(document.getElementById("Numero2").value);
+
+            var Numero3=Number(document.getElementById("Numero3").value);
+
+            var Numero4=Number(document.getElementById("Numero4").value);
+            
+
+            var resultado = Numero1 + Numero2
+
+            var resultado2 = Numero3 * Numero4
+
+            document.getElementById("resultado").value = resultado
+
+            document.getElementById("resultado2").value = resultado2
+
+        }
+    </script>
+
+
+<body>
+
+
+   
+    <div id="b">
+        <div id="bb">
+            <p>Escribir un programa en el cual se ingresen cuatro números, calcular y mostrar la suma de los dos primeros y el producto del tercero y el cuarto.</p>
+        </div>
+        <form name="nombre">
+           <label for="text">Ingresa numeros:</label>
+           <input type="text"  id="Numero1" size="15" >
+           <input type="text"  id="Numero2" size="15" >
+           <input type="text"  id="Numero3" size="15" >
+           <input type="text"  id="Numero4" size="15" >
+           Resultado 1 :<input type="text" id="resultado" size="15">
+           Resultado 2:<input type="text" id="resultado2" size="15">
+
+           <input type="button" value="Calcular" onclick="suma()">
+
+
+
+
+        </form>
+    </div>
+
+ <footer>Erika Ventura @2022</footer>
+
+</body>
+</html>

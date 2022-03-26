@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<header>
+      <nav>
+          <ul>
+              <div class="menu">
+                  <li><a href="index.html">Ejercico  A</a></li>
+                  <li><a href="b.html">Ejercico  B</a></li>
+                  <li><a href="c.html" > Ejercico  C</a></li>
+                  <li><a href="d.html"> Ejercico  D</a></li>
+                   <li><a href="e.html" > Ejercico  E</a></li>
+               </div>
+          </ul>
+       </nav>
+</header>
+<script type="text/javascript">
+    function mayor(){
+        
+        var Numero1=Number(document.getElementById("Numero1").value);
+
+        var Numero2=Number(document.getElementById("Numero2").value);
+
+        var Numero3=Number(document.getElementById("Numero3").value);
+
+        if(Numero1>=Numero2 && Numero1>=Numero3){
+
+            document.getElementById("may").value = Numero1
+
+        }else if(Numero2>=Numero1 &&  Numero2>=Numero3 ) {
+
+            document.getElementById("may").value = Numero2
+            
+        } else {
+            document.getElementById("may").value = Numero3
+            
+        }
+    }
+</script>
+<body>  
+    <div id="e">
+        <div id="ee" >
+            <p>Se cargan por teclado tres números distintos. Mostrar  el mayor de ellos</p>
+            </div>  
+        <form>
+            <label>Ingresar Numeros:</label>
+            <input type="text" id="Numero1" size="15">
+            <input type="text" id="Numero2" size="15">
+            <input type="text" id="Numero3" size="15">
+
+            Numero Mayor:<input type="text" id="may">
+            
+            <input type="button" value="Calcular" onclick="mayor()">
+
+        </form>
+    </div>
+
+
+
+    <footer>Erika Ventura @2022</footer>
+  
+</body>
+</html>

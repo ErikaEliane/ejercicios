@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+   <header>
+      <nav>
+          <ul>
+              <div class="menu">
+                  <li><a href="index.html">Ejercico  A</a></li>
+                  <li><a href="b.html">Ejercico  B</a></li>
+                  <li><a href="c.html" > Ejercico  C</a></li>
+                  <li><a href="d.html"> Ejercico  D</a></li>
+                   <li><a href="e.html" > Ejercico  E</a></li>
+               </div>
+          </ul>
+       </nav>
+    </header>
+
+<script type="text/javascript" >
+  function mostrar(){
+    var usuario=document.getElementById("usuario").value;
+
+    var correo=document.getElementById("correo").value;
+    
+    document.getElementById("final").value =usuario;
+    document.getElementById("cor").value=correo;
+    
+   }
+    
+</script>
+<body>
+
+      <div class="container">
+        <div id="aa">
+          <p >Escribir un programa que permita cargar el nombre de un usuario y su mail por teclado. Mostrar posteriormente los datos en la página HTML.</p>
+        </div>
+        <form >
+            Usuario:<input type="text"  id="usuario" placeholder="daniel" size="10" >
+            Correo:<input type="email"  id="correo" placeholder="daniel@gmail.com" size="27" >
+            
+            <input type="button" value="Enviar" onclick="mostrar()">
+
+            R:<input type="text"  id="final"  size="10" >
+            R:<input type="text"  id="cor" size="40" >
+
+
+
+        </form>
+      </div>
+
+
+    <footer>Erika Ventura @2022</footer>
+
+</body>
+</html>

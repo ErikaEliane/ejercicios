@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<header>
+      <nav>
+          <ul>
+              <div class="menu">
+                  <li><a href="index.html">Ejercico  A</a></li>
+                  <li><a href="b.html">Ejercico  B</a></li>
+                  <li><a href="c.html" > Ejercico  C</a></li>
+                  <li><a href="d.html"> Ejercico  D</a></li>
+                   <li><a href="e.html" > Ejercico  E</a></li>
+               </div>
+          </ul>
+       </nav>
+</header>
+<script type="text/javascript">
+    function notas(){
+
+        var Numero1 =Number(document.getElementById("Numero1").value);
+
+        var Numero2 =Number(document.getElementById("Numero2").value);
+
+        var Numero3 =Number(document.getElementById("Numero3").value);
+
+        var sum= Numero1+Numero2+Numero3
+
+        var promedio= sum / 3
+
+
+        if(promedio>=4){
+            document.getElementById("promedio").value=promedio
+
+            document.getElementById("estado").value="REGULAR"
+
+        }else{
+            document.getElementById("promedio").value=promedio
+
+            document.getElementById("estado").value="DESAPROBADO"
+     
+        }
+
+    }
+
+</script>
+<body>  
+
+
+    <div class="container">
+        <div id="dd">
+            <p>Se ingresan tres notas de un alumno, si el promedio es mayor o igual a 4 mostrar un mensaje 'regular', sino 'reprobado'</p>
+        </div>
+        <form>
+            <label>Ingresar Notas:</label>
+            <input type="text" id="Numero1" size="20">
+            <input type="text" id="Numero2" size="20">
+            <input type="text" id="Numero3" size="20">
+
+            Promedio:<input type="text" id="promedio">
+            Estado:<input type="text" id="estado">
+
+
+            <input type="button" value="Calcular" onclick="notas()">
+        </form>
+    </div>
+
+
+
+    <footer>Erika Ventura @2022</footer>
+  
+</body>
+</html>
